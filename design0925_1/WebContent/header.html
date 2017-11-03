@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Lobster|Wendy+One');
+@import url(http://fonts.googleapis.com/earlyaccess/jejuhallasan.css);
+body, ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#header {
+	height: 30px;
+	width: 100%;
+	background-color: black;
+}
+
+#header_ul {
+	list-style-type: none;
+}
+
+.header_li {
+	float: left;
+	color: white;
+	text-align:center;
+	position:relative;
+}
+
+.header_a {
+	color: white;
+	text-decoration: none;
+	padding: 0 10px;
+	font-size: 15px;
+	line-height: 30px;
+	font-family: 'Jeju Hallasan', serif;
+
+
+}
+.header_li:HOVER{
+background-color:#DDD;
+}
+.header_li:HOVER .header_dropdown{
+display : block;
+}
+	
+.header_li:HOVER .header_a {
+	color: red;
+}
+#header_inner{
+float:right;
+margin-right:70px;
+}
+#BOOKMARK{
+COLOR : WHITE;
+FONT-SIZE : 15PX;
+LINE-HEIGHT : 30PX;
+FONT-WEIGHT : BOLD;
+margin-left : 70px;
+}
+
+.header_dropdown{
+width:85px;
+left:0px;
+display:none;
+background-color:#DDD;
+}
+
+.dropdown_a{
+display:block;
+color : black;
+text-decoration:none;
+font-size : 12px;
+heigth:30px;
+line-heigth:30px;
+padding : 10px 0px;
+}
+
+.dropdown_a:HOVER{
+background-color:black;
+color : white;
+}
+
+.logo_span{
+color:black;
+font-size : 55px;
+}
+
+#logo>a{
+text-decoration:none;
+font-family: 'Wendy One', sans-serif;
+font-family: 'Lobster', cursive;
+}
+
+#mainlogo{
+width:280px;
+text-align:center;
+margin:0 auto;
+padding : 20px;
+}
+
+#nav{
+height : 45px;
+border: 2px solid black;
+margin-bottom:20px;
+
+
+}
+#nav_ul{
+list-style-type : none;
+
+
+}
+.nav_li{
+	float : left;
+	padding : 10px 10px;
+	color : black;
+	text-align: center;
+	
+
+}
+.nav.a{
+text-decoration: none;
+}
+#Login_head{
+	margin : 60px 80px;
+	padding-bottom : 5px;
+	font-size : 20px;
+	font-family: 'Jeju Hallasan', serif;
+	}
+#Lg_table{
+margin-top : 30px;
+margin-left : 50px;
+padding-right : 280px;
+margin-bottom : 20px;
+font-size : 15px;
+border : 1px solid gray;
+}
+td, th{
+	padding: 10px;
+}
+#info_id{
+height: 21px;
+}
+
+#info_bt{
+ vertical-align: middle;
+margin-left : 5px;
+}
+.Lg_ad{
+margin-top : 5px;
+}
+#agree{
+border:1px solid black;
+margin-top : 20px;
+overflow : scroll;
+heigth : 60px; 
+}
+#agree_area{
+border: 1px solid black;
+
+}
+</style>
+</head>
+<body>
+	<div id="header">
+		<SPAN ID = "BOOKMARK">HYEOK JIN +</SPAN>
+			<!-- 로그인,회원가입 -담겨있는 div -->
+		<div id="header_inner">
+			<ul id="header_ul">
+				<li class="header_li"><a href="#" class="header_a"><b>로그인</b></a></li>
+				<li class="header_li"><a href="#" class="header_a"><b>회원가입</b></a></li>
+				<li class="header_li"><a href="#" class="header_a"><b>마이페이지</b></a>
+				<div class = "header_dropdown">
+					<a href="#" class="dropdown_a">주문/배송조회</a>
+					<a href="#" class="dropdown_a">장바구니</a>
+					<a href="#" class="dropdown_a">워시리스트</a>
+					<a href="#" class="dropdown_a">쿠폰조회</a>
+					<a href="#" class="dropdown_a">회원정보</a>
+				</div>
+				</li>
+								
+				<li class="header_li"><a href="#" class="header_a"><b>공지사항</b></a></li>
+			</ul>
+		</div>
+		</div>
+	<div id = "logo">
+		<a href="#">
+			<div id ="mainlogo">
+				<span class="logo_span">HYEOK JIN</span>
+			</div>
+		</a>
+	</div>	
+		<div id="nav">
+			<ul id ="nav_ul">
+		<li class="nav_li"><a href="#" class = "nav_a">BEST</a></li>
+		<li class="nav_li"><a href="#" class = "nav_a">OUTER</a></li>
+		<li class="nav_li"><a href="#" class = "nav_a">TOP</a></li>
+		<li class="nav_li"><a href="#" class = "nav_a">BOTTOM</a></li>
+		<li class="nav_li"><a href="#" class = "nav_a">SHOES</a></li>
+		<li class="nav_li"><a href="#" class = "nav_a">SALE</a></li>
+		
+		</ul>
+		</div>
+	<span id = "Login_head">
+	<strong>회원 정보 </strong>
+	</span>
+	
+	
+
+
+
+<!-- <div id = "info">
+		
+		<ul id = "info_ul">
+		<div class = "info" id="info_id"> -->		
+		
+		<table id = "Lg_table">
+			<tr>
+				<th> 아이디</th>
+				<td><input type = "text" class= "input_login" id="info_id">
+				<input type ="button"value="중복 확인" id="info_bt">
+				</td>
+			</tr>
+			<tr>			
+				<th> 비밀번호</th>
+				<td><input type = "text" class= "input_login" id="info_id"></td>
+			</tr>
+			<tr>					
+				<th> 비밀번호 확인</th>
+				<td><input type = "text" class= "input_login" id="info_id"></td>				
+			</tr>
+			<!-- <tr>
+				<th>비밀번호 확인 질문</th>
+				<td><select type ="text" class = "input_login" id = "info_id">
+					<option>어머니 성함은?</option>
+					<option>아버지 성함은?</option>
+					<option>학창 시절 기억에 남는 선생님 성함은?</option>
+					<option>인상 깊었던 책 이름은?</option>
+					<option>나의 고향은?</option>
+					<option>오늘 점심에 먹은 메뉴는?</option>
+				</select>
+			</tr> 
+			<tr>
+				<th>비밀번호 확인 답변</th>
+				<td><input type = "text" class= "input_login" id="info_id"></td>
+			</tr>				 -->
+			<tr>
+				<th>이름</th>
+				<td><input type = "text" class= "input_login" id="info_id"></td>
+			</tr>
+			<tr>
+				<th>주소</th>
+				<td><input type = "text" class= "Lg_ad" id="info_id">
+				<input type ="button"value="우편 주소" id="info_bt">
+				<br>
+				<input type = "text" class= "Lg_ad" id="info_id">
+				<br>
+				<input type = "text" class= "Lg_ad" id="info_id"></td>
+			</tr>
+		<tr>
+			<th>휴대 전화</th>
+			<td><input type = "text" class= "Lg_ad" id="info_id">
+		</tr>			
+		<tr>
+			<th>이메일</th>
+			<td><input type = "text" class= "Lg_ad" id="info_id">
+		</tr>
+		
+		</table>
+	
+		
+</body>
+</html>
